@@ -48,4 +48,8 @@ public class UserConfig implements UserDetailsService {
         // 封装用户信息，并返回。参数分别是：用户名，密码，用户权限
         return new User(sysUserVo.getLoginName(), sysUserVo.getPassword(), AuthorityUtils.commaSeparatedStringToAuthorityList(authorityList.toString()));
     }
+
+    public void test() {
+
+    }
 }
